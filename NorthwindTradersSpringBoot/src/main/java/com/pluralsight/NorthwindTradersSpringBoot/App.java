@@ -10,19 +10,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class App implements CommandLineRunner {
-	@Autowired
-	ProductDao productDao;
+public class App  {
+//	@Autowired
+//	ProductDao productDao;
 
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		productDao.add(new Product(0, "Coke", "Drinks", 2));
-
-		List<Product> products = productDao.getAll();
-		System.out.println(products);
-	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//		productDao.add(new Product(0, "Coke", "Drinks", 2));
+//
+//		List<Product> products = productDao.getAll();
+//		System.out.println(products);
+//	}
 }
